@@ -1,0 +1,17 @@
+PODS:
+  - CircleMenu (2.0.1)
+  - SQLite.swift (0.11.2):
+    - SQLite.swift/standard (= 0.11.2)
+  - SQLite.swift/standard (0.11.2)
+
+DEPENDENCIES:
+  - CircleMenu (~> 2.0.1)
+  - SQLite.swift
+
+SPEC CHECKSUMS:
+  CircleMenu: a964e8b03aae58c84b40d5cf64630b62bef077eb
+  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+
+PODFILE CHECKSUM: 2e74aa4ddf3e56db27447184d7b93d13bdde1787
+
+COCOAPODS: 1.1.1

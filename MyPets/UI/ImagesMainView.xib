@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagesMainView" customModule="MyPets" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="6h8-x0-Ia5" id="uZ0-90-5Zo"/>
+                <outlet property="segmentControl" destination="dHr-gF-KYr" id="1HD-aH-06O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="345"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dHr-gF-KYr">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="fVq-xn-HHV"/>
+                        <constraint firstAttribute="height" constant="28" id="xZY-pt-P4t"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Images"/>
+                        <segment title="Videos"/>
+                    </segments>
+                    <color key="tintColor" red="0.89411764705882357" green="0.37647058823529411" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="indexChange:" destination="-1" eventType="valueChanged" id="enA-XW-BWQ"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-x0-Ia5">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6h8-x0-Ia5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="H4y-RB-SgC"/>
+                <constraint firstItem="dHr-gF-KYr" firstAttribute="top" secondItem="6h8-x0-Ia5" secondAttribute="bottom" constant="35" id="KdP-Lg-E1Q"/>
+                <constraint firstItem="dHr-gF-KYr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eFH-Es-UVX"/>
+                <constraint firstAttribute="bottom" secondItem="dHr-gF-KYr" secondAttribute="bottom" constant="55" id="gYd-89-bBn"/>
+                <constraint firstItem="6h8-x0-Ia5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="od4-Ow-TfX"/>
+                <constraint firstAttribute="trailing" secondItem="6h8-x0-Ia5" secondAttribute="trailing" constant="8" id="tXF-Bn-Sc1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-130.5" y="-44.5"/>
+        </view>
+    </objects>
+</document>
